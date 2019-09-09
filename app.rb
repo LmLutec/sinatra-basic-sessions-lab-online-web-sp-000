@@ -3,7 +3,7 @@ require 'pry'
 class App < Sinatra::Base
   
   enable :sessions 
-  set :session_secret 
+  set :session_secret, "item"
   
   get '/' do 
     erb :index 
